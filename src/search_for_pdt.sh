@@ -34,6 +34,12 @@ search (){
 		"$HOME/go/src/github.com/bountylabs/service/hlspull"
 		"$HOME/go/src/github.com/bountylabs/service/payman"
 		"$HOME/go/src/github.com/bountylabs/service/public-api"
+
+		"$HOME/go/src/github.com/bountylabs/service/fleets"
+		"$HOME/go/src/github.com/bountylabs/service/lambda_spam_requests"
+		"$HOME/go/src/github.com/bountylabs/service/text-classification"
+		"$HOME/go/src/github.com/bountylabs/service/tools"
+
 		#"$HOME/go/src/github.com/bountylabs/service/periscope_admin"
 		"$HOME/go/src/github.com/bountylabs/service/api_common"
 		"$HOME/go/src/github.com/bountylabs/service/api_common/data/datasets/business"
