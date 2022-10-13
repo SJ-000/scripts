@@ -57,6 +57,12 @@ search (){
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/bcast"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/cdn"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/copyrightviolation"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/known_device_token"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/metadata"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/clips"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/rank"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/spam"
 	)
 
 	for d in ${directories[@]}; do
