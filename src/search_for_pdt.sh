@@ -68,6 +68,8 @@ search (){
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/themes"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/tickets"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/tos"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/user"
 	)
 
 	for d in ${directories[@]}; do
