@@ -43,6 +43,7 @@ search (){
 		#"$HOME/go/src/github.com/bountylabs/service/periscope_admin"
 		"$HOME/go/src/github.com/bountylabs/service/api_common"
 		"$HOME/go/src/github.com/bountylabs/service/api_common/data/datasets/business"
+
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/user"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/tickets"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/chatman"
@@ -76,6 +77,10 @@ search (){
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/turn"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/vip"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/watch"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/abuse"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/appmessage"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/authentication"
 	)
 
 	for d in ${directories[@]}; do
