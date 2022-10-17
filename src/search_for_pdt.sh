@@ -25,39 +25,46 @@ confirmation (){
 }
 
 search (){
+	# order of tickets in PSVC-10213
 	directories=(
 		"$HOME/go/src/github.com/bountylabs/service/safety_service"
 		"$HOME/go/src/github.com/bountylabs/service/guest"
 		"$HOME/go/src/github.com/bountylabs/service/channels"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/user"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/tickets"
+
+		"$HOME/go/src/github.com/bountylabs/service/api_common"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/chatman"
+
 		"$HOME/go/src/github.com/bountylabs/service/audit-trail"
 		"$HOME/go/src/github.com/bountylabs/service/email"
 		"$HOME/go/src/github.com/bountylabs/service/hlspull"
-		"$HOME/go/src/github.com/bountylabs/service/payman"
-		"$HOME/go/src/github.com/bountylabs/service/public-api"
 
 		"$HOME/go/src/github.com/bountylabs/service/fleets"
 		"$HOME/go/src/github.com/bountylabs/service/lambda_spam_requests"
 		"$HOME/go/src/github.com/bountylabs/service/text-classification"
 		"$HOME/go/src/github.com/bountylabs/service/tools"
 
+		"$HOME/go/src/github.com/bountylabs/service/payman"
 		#"$HOME/go/src/github.com/bountylabs/service/periscope_admin"
-		"$HOME/go/src/github.com/bountylabs/service/api_common"
-		"$HOME/go/src/github.com/bountylabs/service/api_common/data/datasets/business"
+		"$HOME/go/src/github.com/bountylabs/service/public-api"
 
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/user"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/tickets"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/chatman"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/business"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/abuse"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/appmessage"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/authentication"
+
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/bcast"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/cdn"
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/copyrightviolation"
+
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/dmca"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/editorial"
 
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/feature"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/ingest"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/installation"
-
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/bcast"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/cdn"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/copyrightviolation"
 
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/known_device_token"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/metadata"
@@ -78,9 +85,8 @@ search (){
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/vip"
 		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/watch"
 
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/abuse"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/appmessage"
-		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/authentication"
+		# Big Query
+		"$HOME/go/src/github.com/bountylabs/service/proxsee_service/business"
 	)
 
 	for d in ${directories[@]}; do
