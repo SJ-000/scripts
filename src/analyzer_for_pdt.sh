@@ -30,7 +30,10 @@ search (){
 	COMMAND="github.com/bountylabs/service/tools/lint/passes/pdtv2/cmd"
 	TARGET="github.com/bountylabs/service/$KEYWORD/..."
 	RESULT=$(go run $COMMAND combined -json $TARGET 2> /dev/null)
-	echo $RESULT | jq 'to_entries|.[]|select(.key|contains(".test")|not)|.value|.pdtv2|.[]|.[]' | grep -E --color 'notice|warning|complete|provide|specified|unhandled|$'
+	echo $RESULT \
+		| sed 's/\\\\/\\/g' \
+		| jq 'to_entries|.[]|select(.key|contains(".test")|not)|.value|.pdtv2|.[]|.[]' \
+		| grep -E --color 'notice|warning|complete|provide|specified|unhandled|$'
 }
 
 post (){
